@@ -1,0 +1,106 @@
+:root {
+	--light: #ddd3ca;
+	--bold: #738b84;
+	--bold-brown: #e3d1bb;
+	--brown: #958271;
+	--dark: #242323;
+
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Quicksand', sans-serif;
+	color: var(--brown);
+}
+
+p {
+	letter-spacing: 3px;
+}
+::selection {
+	background-color: rgba(81, 60, 44, 0.8);
+	color: var(--light);
+}
+
+header {
+	height: 100vh;
+	background-image: url(./assets/brigadeiros.jpg);
+	background-size: cover;
+	background-position: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	text-align: center;
+}
+header p {
+	font-size: 1.5rem;
+	color: var(--light);
+}
+header h1 {
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 300;
+	font-size: 8rem;
+
+	color: var(--light);
+	line-height: 1;
+	margin-top: 2rem;
+}
+
+.widht {
+	max-width: 1000px;
+}
+/* hr {
+	width: 20%;
+	margin: 1rem auto;
+	color: var(--bold-brown);
+} */
+
+.feature {
+	padding: 5rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--dark);
+}
+.featureText {
+	width: 40%;
+	text-align: left;
+}
+.feature h2 {
+	color: var(--bold-brown);
+	font-family: 'Cormorant Garamond', serif;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+}
+.feature p:first-of-type {
+	margin-bottom: 1rem;
+}
+.img {
+	width: 40%;
+	margin-left: 2rem;
+	text-align: center;
+}
+.feature img {
+	width: 100%;
+	max-width: 700px;
+	border-radius: 5px;
+}
+
+
+
+@media(max-width: 1080px) {
+	html {
+		font-size: 93.75%;
+	}
+}
+@media(max-width: 720px) {
+	html {
+		font-size: 87.5%;
+	}
+}
