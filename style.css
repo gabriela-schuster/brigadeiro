@@ -1,9 +1,9 @@
 :root {
-	--light: #ddd3ca;
+	--light: #ebd7c6;
 	--bold: #738b84;
 	--bold-brown: #e3d1bb;
-	--brown: #958271;
-	--dark: #242323;
+	--brown: #a59281;
+	--dark: #252020;
 
 }
 * {
@@ -23,6 +23,11 @@ p {
 	color: var(--light);
 }
 
+.margin {
+	max-width: 1200px;
+	/* border: 1px solid crimson; */
+}
+
 header {
 	height: 100vh;
 	background-image: url(./assets/brigadeiros.jpg);
@@ -30,15 +35,16 @@ header {
 	background-position: center;
 
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
+	align-content: space-between;
 
 	text-align: center;
 }
 header p {
-	font-size: 1.5rem;
-	color: var(--light);
+	font-size: 2rem;
+	color: var(--bold);
 }
 header h1 {
 	font-family: 'Cormorant Garamond', serif;
@@ -46,18 +52,9 @@ header h1 {
 	font-size: 8rem;
 
 	color: var(--light);
-	line-height: 1;
+	line-height: 0.7;
 	margin-top: 2rem;
 }
-
-.widht {
-	max-width: 1000px;
-}
-/* hr {
-	width: 20%;
-	margin: 1rem auto;
-	color: var(--bold-brown);
-} */
 
 .feature {
 	padding: 5rem;
@@ -67,31 +64,81 @@ header h1 {
 	align-items: center;
 
 	background-color: var(--dark);
+
+}
+.align_flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
 }
 .featureText {
-	width: 40%;
-	text-align: left;
+	width: 50%;
+	text-align: right;
 }
 .feature h2 {
 	color: var(--bold-brown);
 	font-family: 'Cormorant Garamond', serif;
 	margin-bottom: 1rem;
-	font-size: 2rem;
+	font-size: 3rem;
+}
+.feature p {
+	font-size: 1rem;
 }
 .feature p:first-of-type {
 	margin-bottom: 1rem;
+	font-size: 1.3rem;
+}
+.spacer {
+	width: 0rem;
 }
 .img {
-	width: 40%;
-	margin-left: 2rem;
+	width: 50%;
 	text-align: center;
 }
 .feature img {
-	width: 100%;
+	width: 75%;
 	max-width: 700px;
 	border-radius: 5px;
 }
 
+.display {
+	background-color: var(--light);
+	width: 100%;
+	padding-bottom: 5rem;
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+
+}
+.galery {
+	padding: 2rem 0;
+	margin: auto;
+	width: 90%;
+	background-color: var(--bold);
+
+	border-radius: 10px;
+	border-bottom: 3px dashed var(--dark);
+	color: var(--dark);
+
+	position: relative;
+	bottom: 10%;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.product {
+	width: 30%;
+	border: 1px solid var(--bold-brown);
+	border-radius: 5px;
+}
+.product img {
+	width: 100%;
+	border-radius: 5px;
+}
 
 
 @media(max-width: 1080px) {
