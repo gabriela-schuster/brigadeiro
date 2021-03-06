@@ -30,7 +30,7 @@ p {
 
 header {
 	height: 100vh;
-	background-image: url(assets/baking.jpg);
+	background-image: url(../assets/baking.jpg);
 	background-size: cover;
 	background-position: center;
 
