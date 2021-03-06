@@ -24,15 +24,18 @@ p {
 }
 .margin {
 	max-width: 1200px;
-	/* border: 1px solid crimson; */
 }
 
 header {
-	padding: 0.5rem;
+	padding: 0.5rem 2rem;
 	background-color: var(--bold);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
 }
 header h1 {
 	color: var(--bold-brown);
@@ -42,14 +45,15 @@ header a {
 	color: var(--dark);
 }
 
+.galery_all {
+	padding: 2rem;
+	background-color: var(--dark);
+}
 .galery_all_flex {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 3rem;
-}
-.galery_all {
-	padding: 2rem;
-	background-color: var(--dark);
+	margin: auto;
 }
 .product {
 	width: 100%;
