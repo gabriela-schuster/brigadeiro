@@ -1,0 +1,28 @@
+:root {
+	--light: #ebd7c6;
+	--bold: #738b84;
+	--bold-brown: #e3d1bb;
+	--brown: #a59281;
+	--dark: #252020;
+
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Quicksand', sans-serif;
+	color: var(--brown);
+}
+
+p {
+	letter-spacing: 3px;
+}
+::selection {
+	background-color: rgba(81, 60, 44, 0.8);
+	color: var(--light);
+}
+.margin {
+	max-width: 1200px;
+	/* border: 1px solid crimson; */
+}
