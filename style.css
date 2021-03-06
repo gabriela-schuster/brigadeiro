@@ -30,7 +30,7 @@ p {
 
 header {
 	height: 100vh;
-	background-image: url(./assets/brigadeiros.jpg);
+	background-image: url(assets/baking.jpg);
 	background-size: cover;
 	background-position: center;
 
@@ -44,7 +44,7 @@ header {
 }
 header p {
 	font-size: 2rem;
-	color: var(--bold);
+	color: var(--light);
 }
 header h1 {
 	font-family: 'Cormorant Garamond', serif;
@@ -105,7 +105,7 @@ header h1 {
 .display {
 	background-color: var(--light);
 	width: 100%;
-	padding-bottom: 5rem;
+	padding-bottom: 2rem;
 	text-align: center;
 
 	display: flex;
@@ -113,9 +113,8 @@ header h1 {
 
 }
 .galery {
-	padding: 2rem 0;
 	margin: auto;
-	width: 90%;
+	width: 95%;
 	background-color: var(--bold);
 
 	border-radius: 10px;
@@ -123,23 +122,47 @@ header h1 {
 	color: var(--dark);
 
 	position: relative;
-	bottom: 10%;
+	bottom: 5%;
 
+}
+.products_flex {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 }
 .product {
-	width: 30%;
-	border: 1px solid var(--bold-brown);
+	width: 29%;
+	padding: 0.4rem;
+
+	border-bottom: 1px solid var(--light);
 	border-radius: 5px;
+
+	margin-top: 1.5rem;
 }
+/* .product:last-of-type {
+	margin-bottom: 1.5rem;
+} */
 .product img {
 	width: 100%;
 	border-radius: 5px;
 }
-
+.product h3 {
+	font-size: 2rem;
+	color: var(--bold-brown);
+	font-family: 'Cormorant Garamond', serif;
+}
+.product > p {
+	margin-top: 0.5rem;
+	color: var(--dark);
+}
+.galery .link{
+	color: var(--dark);
+	margin: 2rem 0;
+}
+a {
+	color: var(--bold-brown);
+}
 
 @media(max-width: 1080px) {
 	html {
