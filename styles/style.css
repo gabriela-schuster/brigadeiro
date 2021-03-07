@@ -50,16 +50,22 @@ header h1 {
 	color: var(--light);
 	line-height: 0.7;
 	margin-top: 2rem;
+
+	animation: fade 3s;
 }
 header hr {
 	width: 60%;
 	color: var(--brown);
 	margin: 2rem 0;
 	max-width: 600px;
+
+	animation: fade 0.9s;
 }
 header p {
 	font-size: 2rem;
 	color: var(--light);
+
+	animation: fade 3s;
 }
 
 .feature {
@@ -96,17 +102,24 @@ header p {
 	font-size: 1.3rem;
 }
 .spacer {
-	width: 0rem;
+	width: 1.5rem;
 }
 .img {
 	width: 50%;
-	text-align: center;
+	border-radius: 5px;
+
+	background-image: url(../assets/cinammon.jpg);
+	background-size: cover;
+	background-position: center;
 }
-.feature img {
+.img .placeholder {
+	visibility: hidden;		/* so img has the same heigth as the text, we use the text */
+}
+/* .feature img {
 	width: 75%;
 	max-width: 700px;
-	border-radius: 5px;
-}
+	border-radius: 10px;
+} */
 
 .display {
 	background-color: var(--light);
@@ -216,11 +229,24 @@ a {
 footer {
 	padding: 5rem;
 	background-color: var(--dark);
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	text-align: center;
+	color: var(--bold-brown);
+}
+footer h1 {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 3rem;
+	margin-bottom: 2rem;
 }
 
+@keyframes fade {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
 
 @media(max-width: 1080px) {
 	html {
