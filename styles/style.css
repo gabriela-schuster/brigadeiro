@@ -182,7 +182,7 @@ a {
 .reviews_container {
 	margin: auto;
 	width: 90%;
-	margin-top: 1rem;
+	margin-top: 0.8rem;
 	padding: 1rem;
 
 	display: flex;
@@ -197,12 +197,17 @@ a {
 	margin-bottom: 0.5rem;
 	border-radius: 50%;
 	border: 2px solid var(--light);
-} 
+}
+.review span {
+	display: block;
+	color: var(--dark);
+	margin-top: 0.2rem;
+}
 
 .wave_img {
 	background-color: var(--bold);
 	margin-bottom: -6px;
-	width: 150%;
+	width: 100%;
 }
 .wave_img > img {
 	width: 100%;
