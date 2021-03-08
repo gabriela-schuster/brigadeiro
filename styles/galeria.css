@@ -72,3 +72,60 @@ header a {
 .product p {
 	font-size: 1.5rem;
 }
+
+@media(max-width: 1080px) {
+	html {
+		font-size: 93.75%;
+	}
+}
+@media(max-width: 770px) {
+	html {
+		font-size: 83.5%;
+	}
+}
+@media(max-width: 620px) {
+	html {
+		font-size: 80%;
+	}
+	header {
+		width: 100%;
+		position: static;
+		padding: 1rem;
+		box-sizing: border-box;
+	}
+	header h1 {
+		font-size: 3rem;
+	}
+	header a {
+		font-size: 1.5rem;
+	}
+
+	.galery_all_flex {
+		display: block;
+	}
+	.product h3 {
+		font-size: 3rem;
+	}
+	.product p {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+@media(max-width: 540px) {
+	html {
+		font-size: 75.5%;
+	}
+	header {
+		width: 100%;
+		position: static;
+		padding: 1rem;
+		box-sizing: border-box;
+	}
+	header h1 {
+		font-size: 1.8rem;
+	}
+	header a {
+		font-size: 1rem;
+	}
+	
+}
