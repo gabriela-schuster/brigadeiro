@@ -45,7 +45,7 @@ header {
 header h1 {
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: 300;
-	font-size: 8rem;
+	font-size: 6.5rem;
 
 	color: var(--light);
 	line-height: 0.7;
@@ -175,6 +175,7 @@ header p {
 .galery .link{
 	color: var(--dark);
 	margin: 2rem 0;
+	font-size: 1.3rem;
 }
 a {
 	color: var(--bold-brown);
@@ -253,8 +254,60 @@ footer h1 {
 		font-size: 93.75%;
 	}
 }
-@media(max-width: 720px) {
+@media(max-width: 740px) {
 	html {
-		font-size: 87.5%;
+		font-size: 83.5%;
+	}
+	header h1 {
+		font-size: 6rem;
+	}
+}
+@media(max-width: 500px) {
+	header h1 {
+		font-size: 3rem;
+	}
+	header hr {
+		margin: 1rem 0;
+	}
+	header p {
+		font-size: 1.5rem;
+	}
+
+	.feature {
+		padding: 2rem 1rem;
+	}
+	.align_flex {
+		display: block;
+	}
+	.featureText {
+		width: 100%;
+		text-align: center;
+	}
+	.img {
+		width: 100%;
+		margin: 2rem 0 1rem;
+	}
+
+	.galery {
+		bottom: 1.5%;
+	}
+	.product {
+		width: 90%;
+	}
+	
+	.feitos {
+		padding: 2rem 1rem;
+	}
+	.reviews_container {
+		display: block;
+	}
+	.review {
+		width: 100%;
+	}
+	.review > img {
+		width: 25%;
+	}
+	.review span {
+		margin-bottom: 2rem;
 	}
 }
